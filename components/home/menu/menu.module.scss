@@ -1,0 +1,43 @@
+@import "../../../styles/_vars";
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item_active {
+  background-color: $primary-400;
+  color: $white;
+}
+
+.menu__button {
+  border: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  outline-style: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-200;
+    color: $white;
+  }
+}
+
+// Desktop
+@media (min-width: 921px) {
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu__item {
+    width: 25%;
+  }
+}

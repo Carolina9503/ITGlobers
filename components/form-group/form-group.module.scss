@@ -1,0 +1,17 @@
+@import "../../styles/_vars";
+.form_group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form_group__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_group__error {
+  color: $red;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
